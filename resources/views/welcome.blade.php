@@ -12,10 +12,16 @@
     </head>
     <body>
         <div id="app">
-            <header-component></header-component>
-            {{--<footer-component></footer-component>--}}
+
+            <v-container fluid>
+                {{--<header-component></header-component>--}}
+                {{--<footer-component></footer-component>--}}
+                <router-view></router-view>
+            </v-container>
+
         </div>
 
+        @yield('content')
         <script src="{{ mix('js/app.js')}}" ></script>
     </body>
 </html>

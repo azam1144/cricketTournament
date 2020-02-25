@@ -1,5 +1,4 @@
 <template>
-
     <v-row align="center">
         <v-col class="text-center" cols="12" sm="4">
             <div class="my-2">
@@ -12,3 +11,13 @@
     </v-row>
 </template>
 
+<script>
+    export default {
+
+        data () {
+            return {
+
+            }
+        }
+    }
+</script>

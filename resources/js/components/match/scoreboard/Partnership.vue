@@ -1,15 +1,12 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-    <v-simple-table dense height="300px">
+    <v-simple-table dense>
         <template v-slot:default>
             <thead>
             <tr>
-                <th class="text-left">Batsman</th>
-                <th class="text-left">Status</th>
+                <th class="text-left">Partnership</th>
                 <th class="text-left">R</th>
-                <th class="text-left">B</th>
                 <th class="text-left">Min</th>
-                <th class="text-left">4s</th>
-                <th class="text-left">6s</th>
+                <th class="text-left">B</th>
                 <th class="text-left">S/R</th>
             </tr>
             </thead>
@@ -22,7 +19,15 @@
         </template>
     </v-simple-table>
 </template>
-
+<style lang="scss" scoped>
+    thead{
+        background-color: lightgray;
+    }
+    thead th{
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
 <script>
     export default {
         data () {

@@ -1,28 +1,47 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-    <v-simple-table dense height="300px">
+    <v-simple-table dense>
         <template v-slot:default>
             <thead>
-            <tr>
-                <th class="text-left">Batsman</th>
-                <th class="text-left">Status</th>
-                <th class="text-left">R</th>
-                <th class="text-left">B</th>
-                <th class="text-left">Min</th>
-                <th class="text-left">4s</th>
-                <th class="text-left">6s</th>
-                <th class="text-left">S/R</th>
-            </tr>
+                <tr>
+                    <th class="text-left">Batsman</th>
+                    <th class="text-left">Status</th>
+                    <th class="text-left">R</th>
+                    <th class="text-left">B</th>
+                    <th class="text-left">Min</th>
+                    <th class="text-left">4s</th>
+                    <th class="text-left">6s</th>
+                    <th class="text-left">S/R</th>
+                </tr>
             </thead>
             <tbody>
-            <tr v-for="item in desserts" :key="item.name">
-                <td>{{ item.name }}</td>
-                <td>{{ item.calories }}</td>
-            </tr>
+                <tr v-for="item in desserts" :key="item.name">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.calories }}</td>
+                </tr>
+                <tr>
+                    <td>Extra</td>
+                    <td>(w:3, n:2) = 5</td>
+                </tr>
+                <tr style="background-color: #efefef">
+                    <td>Total</td>
+                    <td>(18.3 over)</td>
+                    <td>181/2</td>
+                    <td>(9.78) runs per over</td>
+                </tr>
             </tbody>
         </template>
     </v-simple-table>
 </template>
 
+<style lang="scss" scoped>
+    thead{
+        background-color: lightgray;
+    }
+     thead th{
+         font-weight: bold;
+         font-size: 16px;
+     }
+</style>
 <script>
     export default {
         data () {

@@ -8,17 +8,9 @@
 import Vue from 'vue';
 import routes from './routes';
 import vuetify from './plugin/vuetify'
-
-import headerComponent from './components/Header';
-import footerComponent from './components/Footer';
-
 require('./bootstrap');
 
 const app = new Vue({
+    router: routes,
     vuetify,
-    components: {
-        headerComponent,
-        footerComponent
-    },
-    routes
 }).$mount('#app');

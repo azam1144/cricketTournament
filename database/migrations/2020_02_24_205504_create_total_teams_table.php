@@ -17,6 +17,7 @@ class CreateTotalTeamsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('series_id')->unsigned();
             $table->string('name');
+            $table->string('code');
             $table->integer('matches');
             $table->integer('won');
             $table->integer('lost');
