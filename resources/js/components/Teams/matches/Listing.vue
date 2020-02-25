@@ -5,31 +5,31 @@
             class="mx-auto"
             outlined
         >
-            <v-container style="width: 100%; max-width: 100%" >
+            <v-container class="container-settings" >
                 <v-layout>
                     <v-list-item three-line>
                         <v-list-item-content>
                             <div class="overline mb-4">OVERLINE</div>
                             <v-list-item-title class="headline mb-1">ICC T20 TOURNAMENTS</v-list-item-title>
                             <v-list-item-subtitle>PSL have following Fixture & Result. Click and get the details.</v-list-item-subtitle>
-                            <v-card class="mx-auto" v-for="item in matches" :key="item" outlined max-width="344" style="text-align: left">
+                            <v-card class="mx-auto card-alignment" v-for="item in matches" :key="item.id" outlined max-width="344">
                                 <v-card-text>
                                     <v-list-item three-line>
                                         <v-list-item-content>
                                             <b class="overline mb-4">Result</b>
                                             <p class="overline mb-4">{{item.matchNo}}, {{item.stadium}}, {{item.datetime}}</p>
-                                            <v-list-item-title class="headline mb-1" style="font-weight: bold">{{item.teamA.name}} <p style="float: right; font-weight: bold" v-if="item.result">{{item.teamA.score}} ({{item.teamA.overs}} ov)</p> </v-list-item-title>
-                                            <v-list-item-title class="headline mb-1" style="font-weight: bold">{{item.teamB.name}} <p style="float: right; font-weight: bold" v-if="item.result">{{item.teamB.score}} ({{item.teamB.overs}} ov)</p> </v-list-item-title>
+                                            <v-list-item-title class="headline mb-1 team-name">{{item.teamA.name}} <p class="score-over" v-if="item.result">{{item.teamA.score}} ({{item.teamA.overs}} ov)</p> </v-list-item-title>
+                                            <v-list-item-title class="headline mb-1 team-name">{{item.teamB.name}} <p class="score-over" v-if="item.result">{{item.teamB.score}} ({{item.teamB.overs}} ov)</p> </v-list-item-title>
                                             <v-list-item-subtitle v-if="item.result">{{item.result}}</v-list-item-subtitle>
                                         </v-list-item-content>
                                     </v-list-item>
                                 </v-card-text>
                                 <v-card-actions>
-                                    <v-btn text color="deep-purple accent-4" >
-                                        Summary
+                                    <v-btn text color="deep-purple accent-4" v-if="item.result">
+                                        <router-link :to="{ path: '/matches/'+item.id}" class="btn-text-decoration">Scoreboard</router-link>
                                     </v-btn>
-                                    <v-btn text color="deep-purple accent-4" >
-                                        Scoreboard
+                                    <v-btn text color="deep-purple accent-4" v-else>
+                                        <router-link :to="{ path: '/matches/'+item.id}" class="btn-text-decoration">Summary</router-link>
                                     </v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -40,6 +40,28 @@
         </v-card>
     </div>
 </template>
+
+<style lang="scss" scoped>
+    .btn-text-decoration{
+        text-decoration: none;
+        color: purple;
+    }
+    .score-over{
+        float: right;
+        font-weight: bold
+    }
+    .team-name{
+        font-weight: bold
+    }
+    .card-alignment{
+        text-align: left;
+        margin-right: 3px;
+    }
+    .container-settings{
+        width: 100%;
+        max-width: 100%
+    }
+</style>
 
 <script>
     export default {

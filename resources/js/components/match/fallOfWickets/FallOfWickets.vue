@@ -2,13 +2,18 @@
 
     <v-row align="center">
         <v-col class="text-center" cols="12" sm="4">
-            <div class="my-2">
-                <v-btn small>Normal</v-btn>
+            <div class="el-margin">
+                <h2> Fall of wickets data will here</h2>
             </div>
-            <div class="my-2">
-                <v-btn small color="primary">Primary</v-btn>
+            <div class="el-margin">
+                <v-btn small style="color: chartreuse">Okay</v-btn>
             </div>
         </v-col>
     </v-row>
 </template>
+<style lang="scss" scoped>
+    .el-margin{
+        margin-top: 20px;
+    }
+</style>
 

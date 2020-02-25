@@ -12,15 +12,10 @@
     </head>
     <body>
         <div id="app">
-
             <v-container fluid>
-                {{--<header-component></header-component>--}}
-                {{--<footer-component></footer-component>--}}
                 <router-view></router-view>
             </v-container>
-
         </div>
-
         @yield('content')
         <script src="{{ mix('js/app.js')}}" ></script>
     </body>

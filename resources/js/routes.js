@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Series from './components/series/Header'
-import Teams from './components/teams/Header'
-import Match from './components/match/Header'
+import Series from './components/series/Base'
+import Teams from './components/teams/Base'
+import Match from './components/match/Base'
 Vue.use(VueRouter);
 
 export default new VueRouter({
