@@ -14,3 +14,6 @@
 Route::get('/{any}', function () {
     return view('welcome');
 });
+Route::get('/{any}/{id}', function () {
+    return view('welcome');
+});

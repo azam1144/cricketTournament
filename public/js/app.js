@@ -1976,8 +1976,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       tab: null,
-      items: ['summary', 'scoreboard', 'fall of wickets', 'ball by ball'],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      items: ['summary', 'scoreboard', 'fall of wickets', 'ball by ball']
     };
   }
 });
@@ -2456,6 +2455,25 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Listing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Listing */ "./resources/js/components/teams/Listing.vue");
+/* harmony import */ var _matches_Listing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./matches/Listing */ "./resources/js/components/teams/matches/Listing.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2471,12 +2489,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    'teams': _Listing__WEBPACK_IMPORTED_MODULE_0__["default"]
+    'teams': _Listing__WEBPACK_IMPORTED_MODULE_0__["default"],
+    'matches': _matches_Listing__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
+      matchTab: null,
+      items: ['Matches', 'Teams'],
       app: 'Cricket Tournament'
     };
   }
@@ -2592,6 +2614,176 @@ __webpack_require__.r(__webpack_exports__);
         tied: 0,
         points: 8,
         nrr: 1.00
+      }]
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      matches: [{
+        id: 1,
+        matchNo: '1st',
+        stadium: 'lahore',
+        teamA: {
+          'name': 'IU',
+          'score': '165',
+          'overs': '16.4',
+          'wickets': '2'
+        },
+        teamB: {
+          'name': 'QG',
+          'score': '164',
+          'overs': '20',
+          'wickets': '8'
+        },
+        result: 'UI won by 8 wickets (with 20 balls remaining)',
+        datetime: '20 Feb, 2020'
+      }, {
+        id: 2,
+        matchNo: '2nd',
+        stadium: 'Karachi',
+        teamA: {
+          'name': 'KK',
+          'score': '150',
+          'overs': '20',
+          'wickets': '8'
+        },
+        teamB: {
+          'name': 'LQ',
+          'score': '140',
+          'overs': '20',
+          'wickets': '8'
+        },
+        result: 'KK won by 10 runs',
+        datetime: '21 Feb, 2020'
+      }, {
+        id: 3,
+        matchNo: '3rd',
+        stadium: 'Multan',
+        teamA: {
+          'name': 'MS',
+          'score': '210',
+          'overs': '20',
+          'wickets': '4'
+        },
+        teamB: {
+          'name': 'PZ',
+          'score': '190',
+          'overs': '20',
+          'wickets': '7'
+        },
+        result: 'MS won by 20 runs',
+        datetime: '22 Feb, 2020'
+      }, {
+        id: 4,
+        matchNo: '4th',
+        stadium: 'Lahore',
+        teamA: {
+          'name': 'LQ',
+          'score': '156',
+          'overs': '20',
+          'wickets': '8'
+        },
+        teamB: {
+          'name': 'QG',
+          'score': '157',
+          'overs': '18.2',
+          'wickets': '5'
+        },
+        result: 'QG won by 5 wickets (with 8 balls remaining)',
+        datetime: '23 Feb, 2020'
+      }, {
+        id: 5,
+        matchNo: '5th',
+        stadium: 'Lahore',
+        teamA: {
+          'name': 'LQ',
+          'score': '0',
+          'overs': '0',
+          'wickets': '0'
+        },
+        teamB: {
+          'name': 'UI',
+          'score': '0',
+          'overs': '0',
+          'wickets': '0'
+        },
+        result: false,
+        datetime: '24 Feb, 2020'
+      }, {
+        id: 6,
+        matchNo: '6th',
+        stadium: 'Karachi',
+        teamA: {
+          'name': 'PZ',
+          'score': '0',
+          'overs': '0',
+          'wickets': '0'
+        },
+        teamB: {
+          'name': 'QG',
+          'score': '0',
+          'overs': '0',
+          'wickets': '0'
+        },
+        result: false,
+        datetime: '25 Feb, 2020'
       }]
     };
   }
@@ -21843,28 +22035,113 @@ var render = function() {
         "v-app-bar",
         { attrs: { absolute: "", color: "white" } },
         [
-          _c(
-            "v-toolbar-title",
-            { staticStyle: { "text-align": "center", "padding-left": "45%" } },
-            [_vm._v(_vm._s(_vm.app))]
-          )
+          _c("v-toolbar-title", { staticStyle: { "text-align": "center" } }, [
+            _vm._v(_vm._s(_vm.app))
+          ])
         ],
         1
       ),
       _vm._v(" "),
       _c(
         "v-container",
+        { staticStyle: { width: "100%", "max-width": "100%" } },
         [
           _c(
             "v-layout",
-            {
-              staticStyle: {
-                "text-align": "center",
-                "margin-top": "60px",
-                "margin-left": "27%"
-              }
-            },
-            [_c("teams")],
+            { staticStyle: { "text-align": "center", "margin-top": "60px" } },
+            [
+              _c(
+                "v-tabs",
+                {
+                  attrs: { "align-with-title": "" },
+                  model: {
+                    value: _vm.matchTab,
+                    callback: function($$v) {
+                      _vm.matchTab = $$v
+                    },
+                    expression: "matchTab"
+                  }
+                },
+                [
+                  _vm._l(_vm.items, function(item) {
+                    return _c("v-tab", { key: item }, [
+                      _vm._v(" " + _vm._s(item) + " ")
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "v-tabs-items",
+                    {
+                      model: {
+                        value: _vm.matchTab,
+                        callback: function($$v) {
+                          _vm.matchTab = $$v
+                        },
+                        expression: "matchTab"
+                      }
+                    },
+                    _vm._l(_vm.items, function(item) {
+                      return _c(
+                        "v-tab-item",
+                        { key: item },
+                        [
+                          _c("v-card", { attrs: { flat: "" } }, [
+                            item === "Matches"
+                              ? _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "v-flex",
+                                      {
+                                        staticClass: "text-xs-center",
+                                        attrs: {
+                                          xs12: "",
+                                          "pb-3": "",
+                                          "pl-5": "",
+                                          "pr-5": ""
+                                        }
+                                      },
+                                      [_c("matches")],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            item === "Teams"
+                              ? _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "v-flex",
+                                      {
+                                        staticClass: "text-xs-center",
+                                        attrs: {
+                                          xs12: "",
+                                          "pb-3": "",
+                                          "pl-5": "",
+                                          "pr-5": ""
+                                        }
+                                      },
+                                      [_c("teams")],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              : _vm._e()
+                          ])
+                        ],
+                        1
+                      )
+                    }),
+                    1
+                  )
+                ],
+                2
+              )
+            ],
             1
           )
         ],
@@ -21998,6 +22275,254 @@ var render = function() {
                   }
                 ])
               })
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "v-card",
+        { staticClass: "mx-auto", attrs: { outlined: "" } },
+        [
+          _c(
+            "v-container",
+            { staticStyle: { width: "100%", "max-width": "100%" } },
+            [
+              _c(
+                "v-layout",
+                [
+                  _c(
+                    "v-list-item",
+                    { attrs: { "three-line": "" } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [
+                          _c("div", { staticClass: "overline mb-4" }, [
+                            _vm._v("OVERLINE")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-title",
+                            { staticClass: "headline mb-1" },
+                            [_vm._v("ICC T20 TOURNAMENTS")]
+                          ),
+                          _vm._v(" "),
+                          _c("v-list-item-subtitle", [
+                            _vm._v(
+                              "PSL have following Fixture & Result. Click and get the details."
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _vm._l(_vm.matches, function(item) {
+                            return _c(
+                              "v-card",
+                              {
+                                key: item,
+                                staticClass: "mx-auto",
+                                staticStyle: { "text-align": "left" },
+                                attrs: { outlined: "", "max-width": "344" }
+                              },
+                              [
+                                _c(
+                                  "v-card-text",
+                                  [
+                                    _c(
+                                      "v-list-item",
+                                      { attrs: { "three-line": "" } },
+                                      [
+                                        _c(
+                                          "v-list-item-content",
+                                          [
+                                            _c(
+                                              "b",
+                                              { staticClass: "overline mb-4" },
+                                              [_vm._v("Result")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "p",
+                                              { staticClass: "overline mb-4" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(item.matchNo) +
+                                                    ", " +
+                                                    _vm._s(item.stadium) +
+                                                    ", " +
+                                                    _vm._s(item.datetime)
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "v-list-item-title",
+                                              {
+                                                staticClass: "headline mb-1",
+                                                staticStyle: {
+                                                  "font-weight": "bold"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(item.teamA.name) + " "
+                                                ),
+                                                item.result
+                                                  ? _c(
+                                                      "p",
+                                                      {
+                                                        staticStyle: {
+                                                          float: "right",
+                                                          "font-weight": "bold"
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          _vm._s(
+                                                            item.teamA.score
+                                                          ) +
+                                                            " (" +
+                                                            _vm._s(
+                                                              item.teamA.overs
+                                                            ) +
+                                                            " ov)"
+                                                        )
+                                                      ]
+                                                    )
+                                                  : _vm._e()
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "v-list-item-title",
+                                              {
+                                                staticClass: "headline mb-1",
+                                                staticStyle: {
+                                                  "font-weight": "bold"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(item.teamB.name) + " "
+                                                ),
+                                                item.result
+                                                  ? _c(
+                                                      "p",
+                                                      {
+                                                        staticStyle: {
+                                                          float: "right",
+                                                          "font-weight": "bold"
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          _vm._s(
+                                                            item.teamB.score
+                                                          ) +
+                                                            " (" +
+                                                            _vm._s(
+                                                              item.teamB.overs
+                                                            ) +
+                                                            " ov)"
+                                                        )
+                                                      ]
+                                                    )
+                                                  : _vm._e()
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            item.result
+                                              ? _c("v-list-item-subtitle", [
+                                                  _vm._v(_vm._s(item.result))
+                                                ])
+                                              : _vm._e()
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-card-actions",
+                                  [
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          text: "",
+                                          color: "deep-purple accent-4"
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Summary\n                                "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          text: "",
+                                          color: "deep-purple accent-4"
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Scoreboard\n                                "
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          })
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
             ],
             1
           )
@@ -79293,6 +79818,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_template_id_43903d60_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_template_id_43903d60_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/teams/matches/Listing.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/teams/matches/Listing.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform& */ "./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform&");
+/* harmony import */ var _Listing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Listing.vue?vue&type=script&lang=js& */ "./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Listing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/teams/matches/Listing.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Listing.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/teams/matches/Listing.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform&":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform& ***!
+  \**********************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/teams/matches/Listing.vue?vue&type=template&id=db220318&xmlns%3Av-slot=http%3A%2F%2Fwww.w3.org%2F1999%2FXSL%2FTransform&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Listing_vue_vue_type_template_id_db220318_xmlns_3Av_slot_http_3A_2F_2Fwww_w3_org_2F1999_2FXSL_2FTransform___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
