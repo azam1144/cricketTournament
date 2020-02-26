@@ -20,6 +20,21 @@ class Over extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['match_id', 'player_id', 'maiden', 'runs', 'wickets', 'economy', '0s', '4s', '6s', 'no_balls', 'wide_balls'];
 
+    /**
+     * Get the Player that owns the Over.
+     */
+    public function player()
+    {
+        return $this->belongsTo('App\Entities\Player');
+    }
+
+    /**
+     * Get the Match that owns the Over.
+     */
+    public function match()
+    {
+        return $this->belongsTo('App\Entities\Match');
+    }
 }

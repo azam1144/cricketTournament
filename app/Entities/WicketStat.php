@@ -20,6 +20,13 @@ class WicketStat extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['match_stats_id', 'runs', 'over', 'wicket'];
 
+    /**
+     * Get the Match Stats that owns the Wicket Stats.
+     */
+    public function matchStats()
+    {
+        return $this->belongsTo('App\Entities\MatchStat');
+    }
 }

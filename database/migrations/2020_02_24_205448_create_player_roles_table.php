@@ -15,9 +15,13 @@ class CreatePlayerRolesTable extends Migration
     {
         Schema::create('player_roles', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('player_id')->unsigned();
             $table->boolean('batsman');
             $table->boolean('bowler');
             $table->timestamps();
+
+            $table->foreign('player_id', 'player_roles_player_id_foreign_key')->references('id')->on('players')->onDelete('cascade');
+
         });
     }
 

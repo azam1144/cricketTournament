@@ -20,6 +20,13 @@ class Series extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['name', 'code', 'sessions'];
 
+    /**
+     * Get the Team for the Series.
+     */
+    public function teams()
+    {
+        return $this->hasMany('App\Entities\Team');
+    }
 }

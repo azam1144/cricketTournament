@@ -20,6 +20,13 @@ class PlayerRole extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['player_id', 'batsman', 'bowler'];
 
+    /**
+     * Get the Player that owns the Role.
+     */
+    public function player()
+    {
+        return $this->belongsTo('App\Entities\Player');
+    }
 }

@@ -20,6 +20,13 @@ class Stadium extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['name', 'address', 'city', 'capacity'];
 
+    /**
+     * Get the Match that owns the Stadium.
+     */
+    public function match()
+    {
+        return $this->belongsTo('App\Entities\Match');
+    }
 }

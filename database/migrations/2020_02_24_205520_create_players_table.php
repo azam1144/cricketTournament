@@ -16,7 +16,6 @@ class CreatePlayersTable extends Migration
         Schema::create('players', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('team_id')->unsigned();
-            $table->integer('role_id')->unsigned();
             $table->string('name');
             $table->string('age');
             $table->integer('total_matches')->nullable(true);
@@ -26,7 +25,6 @@ class CreatePlayersTable extends Migration
             $table->timestamps();
 
             $table->foreign('team_id', 'players_team_id_foreign_key')->references('id')->on('teams')->onDelete('cascade');
-            $table->foreign('role_id', 'players_role_id_foreign_key')->references('id')->on('player_roles')->onDelete('cascade');
         });
     }
 

@@ -20,6 +20,37 @@ class MatchStat extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['match_id', 'team_id', 'runs', 'overs', 'wickets'];
 
+    /**
+     * Get the Team that have Match Stats.
+     */
+    public function team()
+    {
+        return $this->belongsTo('App\Entities\Team');
+    }
+
+    /**
+     * Get the Match that owns the Match Stats.
+     */
+    public function match()
+    {
+        return $this->belongsTo('App\Entities\Match');
+    }
+
+    /**
+     * Get the Ball Stats for the Match Stats.
+     */
+    public function ballStats()
+    {
+        return $this->hasMany('App\Entities\BallStat');
+    }
+
+    /**
+     * Get the Wicket Stats for the Match Stats.
+     */
+    public function wicketStats()
+    {
+        return $this->hasMany('App\Entities\WicketStat');
+    }
 }
