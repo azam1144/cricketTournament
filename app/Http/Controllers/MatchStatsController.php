@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\MatchStatsCreateRequest;
-use App\Http\Requests\MatchStatsUpdateRequest;
-use App\Repositories\MatchStatsRepository;
-use App\Validators\MatchStatsValidator;
+use App\Http\Requests\MatchStatCreateRequest;
+use App\Http\Requests\MatchStatUpdateRequest;
+use App\Repositories\MatchStatRepository;
+use App\Validators\MatchStatValidator;
 
 /**
  * Class MatchStatsController.
@@ -20,22 +20,22 @@ use App\Validators\MatchStatsValidator;
 class MatchStatsController extends Controller
 {
     /**
-     * @var MatchStatsRepository
+     * @var MatchStatRepository
      */
     protected $repository;
 
     /**
-     * @var MatchStatsValidator
+     * @var MatchStatValidator
      */
     protected $validator;
 
     /**
      * MatchStatsController constructor.
      *
-     * @param MatchStatsRepository $repository
-     * @param MatchStatsValidator $validator
+     * @param MatchStatRepository $repository
+     * @param MatchStatValidator $validator
      */
-    public function __construct(MatchStatsRepository $repository, MatchStatsValidator $validator)
+    public function __construct(MatchStatRepository $repository, MatchStatValidator $validator)
     {
         $this->repository = $repository;
         $this->validator  = $validator;
@@ -64,13 +64,13 @@ class MatchStatsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  MatchStatsCreateRequest $request
+     * @param  MatchStatCreateRequest $request
      *
      * @return \Illuminate\Http\Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function store(MatchStatsCreateRequest $request)
+    public function store(MatchStatCreateRequest $request)
     {
         try {
 
@@ -79,7 +79,7 @@ class MatchStatsController extends Controller
             $matchStat = $this->repository->create($request->all());
 
             $response = [
-                'message' => 'MatchStats created.',
+                'message' => 'MatchStat created.',
                 'data'    => $matchStat->toArray(),
             ];
 
@@ -139,14 +139,14 @@ class MatchStatsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  MatchStatsUpdateRequest $request
+     * @param  MatchStatUpdateRequest $request
      * @param  string            $id
      *
      * @return Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function update(MatchStatsUpdateRequest $request, $id)
+    public function update(MatchStatUpdateRequest $request, $id)
     {
         try {
 
@@ -155,7 +155,7 @@ class MatchStatsController extends Controller
             $matchStat = $this->repository->update($request->all(), $id);
 
             $response = [
-                'message' => 'MatchStats updated.',
+                'message' => 'MatchStat updated.',
                 'data'    => $matchStat->toArray(),
             ];
 
@@ -194,11 +194,11 @@ class MatchStatsController extends Controller
         if (request()->wantsJson()) {
 
             return response()->json([
-                'message' => 'MatchStats deleted.',
+                'message' => 'MatchStat deleted.',
                 'deleted' => $deleted,
             ]);
         }
 
-        return redirect()->back()->with('message', 'MatchStats deleted.');
+        return redirect()->back()->with('message', 'MatchStat deleted.');
     }
 }

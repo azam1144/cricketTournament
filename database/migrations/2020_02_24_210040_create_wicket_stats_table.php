@@ -15,14 +15,12 @@ class CreateWicketStatsTable extends Migration
     {
         Schema::create('wicketStats', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('player_id')->unsigned();
             $table->integer('match_stats_id')->unsigned();
             $table->integer('runs');
             $table->integer('over');
             $table->integer('wicket');
             $table->timestamps();
 
-            $table->foreign('player_id', 'fall_of_wickets_player_id_foreign_key')->references('id')->on('players')->onDelete('cascade');
             $table->foreign('match_stats_id', 'fall_of_wickets_match_stats_id_foreign_key')->references('id')->on('match_stats')->onDelete('cascade');
         });
     }

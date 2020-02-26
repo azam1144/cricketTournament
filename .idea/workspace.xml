@@ -3,8 +3,125 @@
   <component name="ChangeListManager">
     <list default="true" id="00881875-8719-4093-8a56-6c7289af9110" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/BallStats.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Batsman.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Bowller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Match.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/MatchStats.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Player.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/PlayerRole.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Series.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Staduim.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/TeamInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/TotalTeams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/WicketStats.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BallStatsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BatsmenController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BowllersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MatchStatsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MatchesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayerRolesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SeriesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StaduimsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamInfosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TotalTeamsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WicketStatsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BallStatsCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BallStatsUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BatsmanCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BatsmanUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BowllerCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BowllerUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MatchCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MatchStatsCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MatchStatsUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MatchUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PlayerCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PlayerRoleCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PlayerRoleUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PlayerUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SeriesCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SeriesUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StaduimCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StaduimUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TeamInfoCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TeamInfoUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TotalTeamsCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TotalTeamsUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/WicketStatsCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/WicketStatsUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/BallStatsPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/BatsmanPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/BowllerPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/MatchPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/MatchStatsPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/PlayerPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/PlayerRolePresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/SeriesPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/StaduimPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/TeamInfoPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/TotalTeamsPresenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Presenters/WicketStatsPresenter.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BallStatsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BallStatsRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BatsmanRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BatsmanRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BowllerRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BowllerRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MatchRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MatchRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MatchStatsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MatchStatsRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PlayerRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PlayerRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PlayerRoleRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PlayerRoleRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/SeriesRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/SeriesRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/StaduimRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/StaduimRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TeamInfoRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TeamInfoRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TotalTeamsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TotalTeamsRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/WicketStatsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/WicketStatsRepositoryEloquent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/BallStatsTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/BatsmanTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/BowllerTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/MatchStatsTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/MatchTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/PlayerRoleTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/PlayerTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/SeriesTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/StaduimTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/TeamInfoTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/TotalTeamsTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transformers/WicketStatsTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/BallStatsValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/BatsmanValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/BowllerValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/MatchStatsValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/MatchValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/PlayerRoleValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/PlayerValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/SeriesValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/StaduimValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/TeamInfoValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/TotalTeamsValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validators/WicketStatsValidator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_overs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batting_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +146,7 @@
           <entry key="example" value="2" />
           <entry key="js" value="23" />
           <entry key="json" value="1" />
-          <entry key="php" value="115" />
+          <entry key="php" value="190" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="1" />
           <entry key="ts" value="2" />
@@ -42,7 +159,7 @@
           <entry key="Blade" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="23" />
-          <entry key="PHP" value="109" />
+          <entry key="PHP" value="184" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="TypeScript" value="2" />
@@ -51,10 +168,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
+          <entry key="dummy" value="15" />
           <entry key="env" value="20" />
           <entry key="js" value="555" />
-          <entry key="php" value="1165" />
+          <entry key="php" value="1775" />
           <entry key="vue" value="3629" />
         </counts>
       </usages-collector>
@@ -63,8 +180,8 @@
           <entry key=".env file" value="20" />
           <entry key="Blade" value="195" />
           <entry key="JavaScript" value="555" />
-          <entry key="PHP" value="970" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="PHP" value="1580" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Vue.js" value="3629" />
         </counts>
       </usages-collector>
@@ -78,19 +195,72 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+            <state relative-caret-position="335">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="136">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="106" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_teams_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding>
+                <element signature="e#7#52#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -98,17 +268,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="272">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -134,6 +304,14 @@
       <find>sixs</find>
       <find>class=&quot;text-left&quot;</find>
       <find>style=&quot;margin-top: 10px&quot;</find>
+      <find>TeamInfoRepository</find>
+      <find>TotalTeamsRepository</find>
+      <find>totalTeam</find>
+      <find>TotalTeams</find>
+      <find>totalT</find>
+      <find>total_teams</find>
+      <find>teams_info</find>
+      <find>fall_of_wickets</find>
     </findStrings>
     <replaceStrings>
       <replace>fours</replace>
@@ -148,23 +326,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_searies_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_staduims_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_role_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_team_info_table.php" />
-        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/plugin/vuetify.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/Summary.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/Scoreboard.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/scoreboard/Partnership.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/scoreboard/Bowler.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/scoreboard/Batsmen.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/scoreboard/Scoreboard.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/ballByBall/BallByBall.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/match/header.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/App.vue" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Teams/Listing.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/matches/Header.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/Header.vue" />
@@ -190,15 +351,32 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Staduim.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Match.php" />
+        <option value="$PROJECT_DIR$/app/Entities/MatchStats.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Bowller.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Batsman.php" />
+        <option value="$PROJECT_DIR$/app/Entities/BallStats.php" />
+        <option value="$PROJECT_DIR$/app/Entities/WicketStats.php" />
+        <option value="$PROJECT_DIR$/app/Entities/TotalTeams.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Series.php" />
+        <option value="$PROJECT_DIR$/app/Entities/TeamInfo.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Player.php" />
+        <option value="$PROJECT_DIR$/app/Entities/PlayerRole.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_teams_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_over_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_overs_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batting_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -341,7 +519,7 @@
               <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
               <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
@@ -355,6 +533,30 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
@@ -398,12 +600,6 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Teams" type="462c0819:PsiDirectoryNode" />
               <item name="matches" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
@@ -462,20 +658,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582571085437</updated>
-      <workItem from="1582571088777" duration="55733000" />
+      <workItem from="1582571088777" duration="63700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55733000" />
+    <option name="totallyTimeSpent" value="63700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33509833" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2193646" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
@@ -489,10 +686,10 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,170 +699,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_211101_create_series_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/SeriesRepositoryEloquent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/SeriesRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Entities/Series.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="1259" column="4" selection-start-line="1259" selection-start-column="4" selection-end-line="1259" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vuetify/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="34942" column="35" selection-start-line="34942" selection-start-column="35" selection-end-line="34942" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Footer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SeriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/plugin/vuetify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/options.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/match/scoreboard/Bowler.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/match/scoreboard/Partnership.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#224#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/applications.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="219" column="16" selection-start-line="219" selection-start-column="16" selection-end-line="219" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Teams/matches/Header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#v-toolbar-title#0;n#v-app-bar#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Teams/Base.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#v-container#0;n#v-card#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#v-layout#0;n#v-container#0;n#v-card#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1341#1380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/series/Base.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -796,87 +829,217 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_211514_create_staduims_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/Staduim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="340">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/Bowller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/WicketStats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/Series.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="391">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/PlayerRole.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="408">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Entities/TeamInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="459">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="171">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TeamsController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="213" column="73" lean-forward="true" selection-start-line="213" selection-start-column="73" selection-end-line="213" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/Teams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="22" column="108" selection-start-line="22" selection-start-column="108" selection-end-line="22" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/TeamsCreateRequest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Presenters/TeamsPresenter.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/TeamsRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Transformers/TeamsTransformer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/BallStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/Batsman.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/Match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/MatchStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/Player.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_overs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batting_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="184">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_wicket_stats_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="335">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="106" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_teams_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

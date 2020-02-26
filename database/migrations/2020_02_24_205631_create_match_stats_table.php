@@ -23,7 +23,7 @@ class CreateMatchStatsTable extends Migration
             $table->timestamps();
 
             $table->foreign('match_id', 'match_stats_match_id_foreign_key')->references('id')->on('matches')->onDelete('cascade');
-            $table->foreign('team_id', 'match_stats_team_id_foreign_key')->references('id')->on('teams_info')->onDelete('cascade');
+            $table->foreign('team_id', 'match_stats_team_id_foreign_key')->references('id')->on('teams')->onDelete('cascade');
         });
     }
 

@@ -26,9 +26,9 @@ class CreateMatchesTable extends Migration
             $table->timestamps();
 
             $table->foreign('stadium_id', 'matches_stadium_id_foreign_key')->references('id')->on('stadiums')->onDelete('cascade');
-            $table->foreign('toss_winner', 'matches_toss_winner_foreign_key')->references('id')->on('total_teams')->onDelete('cascade');
+            $table->foreign('toss_winner', 'matches_toss_winner_foreign_key')->references('id')->on('teams')->onDelete('cascade');
             $table->foreign('match_player', 'matches_match_player_foreign_key')->references('id')->on('players')->onDelete('cascade');
-            $table->foreign('winner', 'matches_winner_foreign_key')->references('id')->on('total_teams')->onDelete('cascade');
+            $table->foreign('winner', 'matches_winner_foreign_key')->references('id')->on('teams')->onDelete('cascade');
 
         });
     }

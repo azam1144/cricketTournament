@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\BallStatsCreateRequest;
-use App\Http\Requests\BallStatsUpdateRequest;
-use App\Repositories\BallStatsRepository;
-use App\Validators\BallStatsValidator;
+use App\Http\Requests\BallStatCreateRequest;
+use App\Http\Requests\BallStatUpdateRequest;
+use App\Repositories\BallStatRepository;
+use App\Validators\BallStatValidator;
 
 /**
  * Class BallStatsController.
@@ -20,22 +20,22 @@ use App\Validators\BallStatsValidator;
 class BallStatsController extends Controller
 {
     /**
-     * @var BallStatsRepository
+     * @var BallStatRepository
      */
     protected $repository;
 
     /**
-     * @var BallStatsValidator
+     * @var BallStatValidator
      */
     protected $validator;
 
     /**
      * BallStatsController constructor.
      *
-     * @param BallStatsRepository $repository
-     * @param BallStatsValidator $validator
+     * @param BallStatRepository $repository
+     * @param BallStatValidator $validator
      */
-    public function __construct(BallStatsRepository $repository, BallStatsValidator $validator)
+    public function __construct(BallStatRepository $repository, BallStatValidator $validator)
     {
         $this->repository = $repository;
         $this->validator  = $validator;
@@ -64,13 +64,13 @@ class BallStatsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  BallStatsCreateRequest $request
+     * @param  BallStatCreateRequest $request
      *
      * @return \Illuminate\Http\Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function store(BallStatsCreateRequest $request)
+    public function store(BallStatCreateRequest $request)
     {
         try {
 
@@ -79,7 +79,7 @@ class BallStatsController extends Controller
             $ballStat = $this->repository->create($request->all());
 
             $response = [
-                'message' => 'BallStats created.',
+                'message' => 'BallStat created.',
                 'data'    => $ballStat->toArray(),
             ];
 
@@ -139,14 +139,14 @@ class BallStatsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  BallStatsUpdateRequest $request
+     * @param  BallStatUpdateRequest $request
      * @param  string            $id
      *
      * @return Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function update(BallStatsUpdateRequest $request, $id)
+    public function update(BallStatUpdateRequest $request, $id)
     {
         try {
 
@@ -155,7 +155,7 @@ class BallStatsController extends Controller
             $ballStat = $this->repository->update($request->all(), $id);
 
             $response = [
-                'message' => 'BallStats updated.',
+                'message' => 'BallStat updated.',
                 'data'    => $ballStat->toArray(),
             ];
 
@@ -194,11 +194,11 @@ class BallStatsController extends Controller
         if (request()->wantsJson()) {
 
             return response()->json([
-                'message' => 'BallStats deleted.',
+                'message' => 'BallStat deleted.',
                 'deleted' => $deleted,
             ]);
         }
 
-        return redirect()->back()->with('message', 'BallStats deleted.');
+        return redirect()->back()->with('message', 'BallStat deleted.');
     }
 }

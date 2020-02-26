@@ -7,35 +7,35 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\WicketStatCreateRequest;
-use App\Http\Requests\WicketStatUpdateRequest;
-use App\Repositories\WicketStatRepository;
-use App\Validators\WicketStatValidator;
+use App\Http\Requests\OverCreateRequest;
+use App\Http\Requests\OverUpdateRequest;
+use App\Repositories\OverRepository;
+use App\Validators\OverValidator;
 
 /**
- * Class WicketStatsController.
+ * Class OversController.
  *
  * @package namespace App\Http\Controllers;
  */
-class WicketStatsController extends Controller
+class OversController extends Controller
 {
     /**
-     * @var WicketStatRepository
+     * @var OverRepository
      */
     protected $repository;
 
     /**
-     * @var WicketStatValidator
+     * @var OverValidator
      */
     protected $validator;
 
     /**
-     * WicketStatsController constructor.
+     * OversController constructor.
      *
-     * @param WicketStatRepository $repository
-     * @param WicketStatValidator $validator
+     * @param OverRepository $repository
+     * @param OverValidator $validator
      */
-    public function __construct(WicketStatRepository $repository, WicketStatValidator $validator)
+    public function __construct(OverRepository $repository, OverValidator $validator)
     {
         $this->repository = $repository;
         $this->validator  = $validator;
@@ -49,38 +49,38 @@ class WicketStatsController extends Controller
     public function index()
     {
         $this->repository->pushCriteria(app('Prettus\Repository\Criteria\RequestCriteria'));
-        $wicketStats = $this->repository->all();
+        $overs = $this->repository->all();
 
         if (request()->wantsJson()) {
 
             return response()->json([
-                'data' => $wicketStats,
+                'data' => $overs,
             ]);
         }
 
-        return view('wicketStats.index', compact('wicketStats'));
+        return view('overs.index', compact('overs'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  WicketStatCreateRequest $request
+     * @param  OverCreateRequest $request
      *
      * @return \Illuminate\Http\Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function store(WicketStatCreateRequest $request)
+    public function store(OverCreateRequest $request)
     {
         try {
 
             $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_CREATE);
 
-            $wicketStat = $this->repository->create($request->all());
+            $over = $this->repository->create($request->all());
 
             $response = [
-                'message' => 'WicketStat created.',
-                'data'    => $wicketStat->toArray(),
+                'message' => 'Over created.',
+                'data'    => $over->toArray(),
             ];
 
             if ($request->wantsJson()) {
@@ -110,16 +110,16 @@ class WicketStatsController extends Controller
      */
     public function show($id)
     {
-        $wicketStat = $this->repository->find($id);
+        $over = $this->repository->find($id);
 
         if (request()->wantsJson()) {
 
             return response()->json([
-                'data' => $wicketStat,
+                'data' => $over,
             ]);
         }
 
-        return view('wicketStats.show', compact('wicketStat'));
+        return view('overs.show', compact('over'));
     }
 
     /**
@@ -131,32 +131,32 @@ class WicketStatsController extends Controller
      */
     public function edit($id)
     {
-        $wicketStat = $this->repository->find($id);
+        $over = $this->repository->find($id);
 
-        return view('wicketStats.edit', compact('wicketStat'));
+        return view('overs.edit', compact('over'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  WicketStatUpdateRequest $request
+     * @param  OverUpdateRequest $request
      * @param  string            $id
      *
      * @return Response
      *
      * @throws \Prettus\Validator\Exceptions\ValidatorException
      */
-    public function update(WicketStatUpdateRequest $request, $id)
+    public function update(OverUpdateRequest $request, $id)
     {
         try {
 
             $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_UPDATE);
 
-            $wicketStat = $this->repository->update($request->all(), $id);
+            $over = $this->repository->update($request->all(), $id);
 
             $response = [
-                'message' => 'WicketStat updated.',
-                'data'    => $wicketStat->toArray(),
+                'message' => 'Over updated.',
+                'data'    => $over->toArray(),
             ];
 
             if ($request->wantsJson()) {
@@ -194,11 +194,11 @@ class WicketStatsController extends Controller
         if (request()->wantsJson()) {
 
             return response()->json([
-                'message' => 'WicketStat deleted.',
+                'message' => 'Over deleted.',
                 'deleted' => $deleted,
             ]);
         }
 
-        return redirect()->back()->with('message', 'WicketStat deleted.');
+        return redirect()->back()->with('message', 'Over deleted.');
     }
 }

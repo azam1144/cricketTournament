@@ -15,7 +15,7 @@ class CreateBallStatsTable extends Migration
     {
         Schema::create('ball_stats', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('match_id')->unsigned();
+            $table->integer('match_stats_id')->unsigned();
             $table->integer('bowler_id')->unsigned();
             $table->integer('batsman_id')->unsigned();
             $table->integer('ball');
@@ -23,7 +23,7 @@ class CreateBallStatsTable extends Migration
             $table->string('stats');
             $table->timestamps();
 
-            $table->foreign('match_id', 'ball_stats_match_id_foreign_key')->references('id')->on('matches')->onDelete('cascade');
+            $table->foreign('match_stats_id', 'ball_stats_match_stats_id_foreign_key')->references('id')->on('match_stats')->onDelete('cascade');
             $table->foreign('bowler_id', 'ball_stats_bowler_id_foreign_key')->references('id')->on('players')->onDelete('cascade');
             $table->foreign('batsman_id', 'ball_stats_batsman_id_foreign_key')->references('id')->on('players')->onDelete('cascade');
 
