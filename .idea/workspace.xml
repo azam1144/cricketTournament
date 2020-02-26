@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00881875-8719-4093-8a56-6c7289af9110" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_player_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_teams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_players_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_teams_table.php.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
           <entry key="example" value="2" />
           <entry key="js" value="23" />
           <entry key="json" value="1" />
-          <entry key="php" value="229" />
+          <entry key="php" value="231" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="1" />
           <entry key="ts" value="2" />
@@ -43,7 +40,7 @@
           <entry key="Blade" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="23" />
-          <entry key="PHP" value="223" />
+          <entry key="PHP" value="225" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="TypeScript" value="2" />
@@ -87,11 +84,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_player_roles_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_players_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_teams_table.php.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#7#52#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -397,16 +415,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582571085437</updated>
-      <workItem from="1582571088777" duration="67500000" />
+      <workItem from="1582571088777" duration="67815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67500000" />
+    <option name="totallyTimeSpent" value="67815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -725,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_teams_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Entities/Team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -756,17 +763,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_players_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_player_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_teams_table.php.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_players_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
