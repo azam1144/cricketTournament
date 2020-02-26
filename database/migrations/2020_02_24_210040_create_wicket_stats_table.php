@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFallOfWicketsTable extends Migration
+class CreateWicketStatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateFallOfWicketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fall_of_wickets', function (Blueprint $table) {
+        Schema::create('wicketStats', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('player_id')->unsigned();
             $table->integer('match_stats_id')->unsigned();
