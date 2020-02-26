@@ -14,14 +14,13 @@ class CreateBatsmenTable extends Migration
     public function up()
     {
         Schema::create('batsmen', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('match_stats_id')->unsigned();
             $table->integer('player_id')->unsigned();
             $table->string('stats');
             $table->integer('run');
             $table->integer('balls');
             $table->integer('4s');
-            $table->integer('6s');
             $table->integer('6s');
             $table->float('strike_rate');
             $table->timestamps();

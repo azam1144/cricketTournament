@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00881875-8719-4093-8a56-6c7289af9110" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Teams/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Teams/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Teams/matches/Listing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Teams/matches/Listing.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/ballByBall/BallByBall.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/ballByBall/BallByBall.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/fallOfWickets/FallOfWickets.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/fallOfWickets/FallOfWickets.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/scoreboard/Batsmen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/scoreboard/Batsmen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/scoreboard/Listing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/scoreboard/Listing.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/match/summary/Summary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/match/summary/Summary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/series/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/series/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_24_211514_create_staduims_table.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,42 +37,47 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="env" value="1" />
+          <entry key="example" value="2" />
           <entry key="js" value="23" />
           <entry key="json" value="1" />
-          <entry key="php" value="87" />
+          <entry key="php" value="111" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="1" />
           <entry key="ts" value="2" />
-          <entry key="vue" value="73" />
+          <entry key="vue" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key=".env file" value="3" />
           <entry key="Blade" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="23" />
-          <entry key="PHP" value="81" />
+          <entry key="PHP" value="105" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="TypeScript" value="2" />
-          <entry key="Vue.js" value="73" />
+          <entry key="Vue.js" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
+          <entry key="env" value="20" />
           <entry key="js" value="555" />
-          <entry key="php" value="1135" />
-          <entry key="vue" value="3613" />
+          <entry key="php" value="1155" />
+          <entry key="vue" value="3629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key=".env file" value="20" />
           <entry key="Blade" value="195" />
           <entry key="JavaScript" value="555" />
-          <entry key="PHP" value="940" />
+          <entry key="PHP" value="960" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Vue.js" value="3613" />
+          <entry key="Vue.js" value="3629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -84,38 +90,91 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/match/Base.vue">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="98" />
-              <folding>
-                <element signature="n#style#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#v-card#2;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#v-card#3;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2019#2058#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/match/scoreboard/Listing.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/match/scoreboard/Batsmen.vue">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="56" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#tr#2;n#tbody#0;n#template#0;n#v-simple-table#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -155,23 +214,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_192703_create_match_stats_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_192810_create_match_batsmen_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_192951_create_match_fall_of_wickets_table.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_190616_create_matches_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_searies_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_staduims_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_role_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_team_info_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/plugin/vuetify.js" />
@@ -185,8 +232,6 @@
         <option value="$PROJECT_DIR$/resources/js/components/match/header.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/App.vue" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Teams/Listing.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/matches/Header.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/Header.vue" />
@@ -199,13 +244,27 @@
         <option value="$PROJECT_DIR$/resources/js/routes.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Teams/Base.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/scoreboard/Batsmen.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/match/Base.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/ballByBall/BallByBall.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/summary/Summary.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/fallOfWickets/FallOfWickets.vue" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Teams/matches/Listing.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/match/scoreboard/Listing.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/match/Base.vue" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php" />
       </list>
     </option>
   </component>
@@ -418,15 +477,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="match" type="462c0819:PsiDirectoryNode" />
-              <item name="scoreboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cricketTournament" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cricketTournament" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Teams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -501,12 +551,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582571085437</updated>
-      <workItem from="1582571088777" duration="51753000" />
+      <workItem from="1582571088777" duration="54886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51753000" />
+    <option name="totallyTimeSpent" value="54886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -542,76 +592,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_190616_create_matches_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_192703_create_match_stats_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="131" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="25" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="126" selection-start-line="31" selection-start-column="126" selection-end-line="31" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_190808_create_bowlings_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="126" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="31" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_192810_create_match_batsmen_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="105" selection-start-line="25" selection-start-column="105" selection-end-line="25" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_192857_create_match_ball_stats_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="150" selection-start-line="25" selection-start-column="150" selection-end-line="25" selection-end-column="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/dump/2020_02_24_192951_create_match_fall_of_wickets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="150" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="25" selection-end-column="150" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_211101_create_series_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -713,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -737,27 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/applications.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -769,20 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -862,20 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/match/Base.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#v-card#2;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#v-card#3;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2019#2058#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/match/ballByBall/BallByBall.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -920,7 +844,129 @@
     <entry file="file://$PROJECT_DIR$/resources/js/components/match/scoreboard/Listing.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/match/Base.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-card#2;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#v-card#3;n#v-tab-item#0;n#v-tabs-items#0;n#v-tabs#0;n#template#0;n#v-toolbar#0;n#v-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2019#2058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_211514_create_staduims_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205414_create_series_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205431_create_stadiums_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205448_create_player_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205504_create_total_teams_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205520_create_players_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205535_create_teams_info_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205631_create_match_stats_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205915_create_bowlers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210018_create_ball_stats_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_210040_create_fall_of_wickets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205610_create_matches_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_24_205946_create_batsmen_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

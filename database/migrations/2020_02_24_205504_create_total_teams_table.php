@@ -14,7 +14,7 @@ class CreateTotalTeamsTable extends Migration
     public function up()
     {
         Schema::create('total_teams', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('series_id')->unsigned();
             $table->string('name');
             $table->string('code');

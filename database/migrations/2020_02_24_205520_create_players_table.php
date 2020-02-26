@@ -14,8 +14,8 @@ class CreatePlayersTable extends Migration
     public function up()
     {
         Schema::create('players', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('team_id')->unsigned();
+            $table->increments('id');
+            $table->integer('teams_id')->unsigned();
             $table->integer('role_id')->unsigned();
             $table->string('name');
             $table->string('age');
@@ -25,7 +25,7 @@ class CreatePlayersTable extends Migration
             $table->integer('captain')->nullable(true);
             $table->timestamps();
 
-            $table->foreign('team_id', 'players_team_id_foreign_key')->references('id')->on('teams')->onDelete('cascade');
+            $table->foreign('teams_id', 'players_team_id_foreign_key')->references('id')->on('total_teams')->onDelete('cascade');
             $table->foreign('role_id', 'players_role_id_foreign_key')->references('id')->on('player_roles')->onDelete('cascade');
         });
     }

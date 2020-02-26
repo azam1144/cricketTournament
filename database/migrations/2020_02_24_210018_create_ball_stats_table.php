@@ -14,7 +14,7 @@ class CreateBallStatsTable extends Migration
     public function up()
     {
         Schema::create('ball_stats', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('match_id')->unsigned();
             $table->integer('bowler_id')->unsigned();
             $table->integer('batsman_id')->unsigned();

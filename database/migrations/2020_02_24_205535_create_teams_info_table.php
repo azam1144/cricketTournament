@@ -14,7 +14,7 @@ class CreateTeamsInfoTable extends Migration
     public function up()
     {
         Schema::create('teams_info', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('player_id')->unsigned();
             $table->integer('role_id')->unsigned();
             $table->integer('teams_id')->unsigned();
@@ -22,7 +22,7 @@ class CreateTeamsInfoTable extends Migration
 
             $table->foreign('player_id', 'team_info_player_id_foreign_key')->references('id')->on('players')->onDelete('cascade');
             $table->foreign('role_id', 'team_info_role_id_foreign_key')->references('id')->on('player_roles')->onDelete('cascade');
-            $table->foreign('teams_id', 'team_info_teams_id_foreign_key')->references('id')->on('teams')->onDelete('cascade');
+            $table->foreign('teams_id', 'team_info_teams_id_foreign_key')->references('id')->on('total_teams')->onDelete('cascade');
 
         });
     }

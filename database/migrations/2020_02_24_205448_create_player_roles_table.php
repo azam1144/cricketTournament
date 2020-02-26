@@ -14,7 +14,7 @@ class CreatePlayerRolesTable extends Migration
     public function up()
     {
         Schema::create('player_roles', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->boolean('batsman');
             $table->boolean('bowler');
             $table->timestamps();

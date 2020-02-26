@@ -14,7 +14,7 @@ class CreateFallOfWicketsTable extends Migration
     public function up()
     {
         Schema::create('fall_of_wickets', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('player_id')->unsigned();
             $table->integer('match_stats_id')->unsigned();
             $table->integer('runs');

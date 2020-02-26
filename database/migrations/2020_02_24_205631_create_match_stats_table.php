@@ -14,7 +14,7 @@ class CreateMatchStatsTable extends Migration
     public function up()
     {
         Schema::create('match_stats', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('match_id')->unsigned();
             $table->integer('team_id')->unsigned();
             $table->integer('runs');

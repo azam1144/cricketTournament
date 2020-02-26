@@ -14,7 +14,7 @@ class CreateBowlersTable extends Migration
     public function up()
     {
         Schema::create('bowlers', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('match_id')->unsigned();
             $table->string('p_name');
             $table->float('overs');
